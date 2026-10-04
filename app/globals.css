@@ -50,24 +50,24 @@
 }
 
 :root {
-  --background: #f3eee4;
-  --foreground: #1c2430;
+  --background: #17345c;
+  --foreground: #f4efe6;
   --card: #fffdf8;
   --card-foreground: #1c2430;
   --popover: #fffdf8;
   --popover-foreground: #1c2430;
-  --primary: #243652;
-  --primary-foreground: #f7f3ea;
-  --secondary: #efe6d6;
-  --secondary-foreground: #243652;
-  --muted: #efe8db;
-  --muted-foreground: #5c6570;
-  --accent: #efe6d6;
-  --accent-foreground: #243652;
+  --primary: #f4efe6;
+  --primary-foreground: #17345c;
+  --secondary: #244272;
+  --secondary-foreground: #f4efe6;
+  --muted: #244272;
+  --muted-foreground: #8fa0b8;
+  --accent: #244272;
+  --accent-foreground: #f4efe6;
   --destructive: #a33b2b;
-  --border: #e3d8c8;
-  --input: #e3d8c8;
-  --ring: #a33b2b;
+  --border: #3e5d8a;
+  --input: #c9d4e4;
+  --ring: #f4efe6;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -125,6 +125,17 @@
   body {
     @apply bg-background text-foreground;
   }
+  .bg-white,
+  .bg-\[\#fffdf8\],
+  .bg-\[\#faf7f1\],
+  .bg-\[\#f7f3ea\],
+  .bg-\[\#f8efd8\],
+  .bg-\[\#f8e6e1\],
+  .bg-\[\#e5f2ec\],
+  [data-slot="card"],
+  .sheet {
+    color: #1c2430;
+  }
   html {
     @apply font-sans;
   }
@@ -144,6 +155,7 @@
   }
   body {
     background: white !important;
+    color: #1c2430 !important;
   }
   main {
     max-width: none !important;
@@ -156,4 +168,19 @@
   .sheet:last-child {
     break-after: auto;
   }
+}
+
+[data-slot="card"] [data-slot="card-description"] {
+  color: #5c6570;
+}
+
+:is([data-slot="card"], .bg-white, .sheet) :is(a, button).text-\[\#f4efe6\] {
+  color: #17345c;
+  border-color: #3e5d8a;
+  background: transparent;
+}
+
+:is([data-slot="card"], .bg-white, .sheet) :is(a, button).text-\[\#f4efe6\]:hover {
+  background: #efe6d6;
+  color: #17345c;
 }

@@ -18,9 +18,9 @@ const links = [
 export function Header() {
   const pathname = usePathname()
   return (
-    <header className="no-print sticky top-0 z-40 border-b border-[#e3d8c8] bg-[#f3eee4]/95 backdrop-blur">
+    <header className="no-print sticky top-0 z-40 border-b border-[#2c4a73] bg-[#17345c]/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-3 gap-y-2 px-4 py-3 sm:px-6">
-        <Link href="/" className="shrink-0 font-serif text-lg tracking-tight whitespace-nowrap text-[#243652]">
+        <Link href="/" className="shrink-0 font-serif text-lg tracking-tight whitespace-nowrap text-[#f4efe6]">
           <span className="sm:hidden">A1 check</span>
           <span className="hidden sm:inline">Junior A1 check</span>
         </Link>
@@ -33,7 +33,7 @@ export function Header() {
                 href={link.href}
                 className={cn(
                   "shrink-0 rounded-full px-3 py-1.5",
-                  active ? "bg-[#243652] text-[#f7f3ea]" : "text-[#3d4654] hover:bg-[#efe6d6]"
+                  active ? "bg-[#f4efe6] text-[#17345c]" : "text-[#d5deea] hover:bg-[#244272]"
                 )}
               >
                 {link.label}

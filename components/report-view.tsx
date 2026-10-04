@@ -29,11 +29,11 @@ export function ReportView({
             Sample learner. Not saved in this browser.
           </p>
         ) : null}
-        <p className="text-sm text-[#5c6570]">
+        <p className="text-sm text-[#c5d2e4]">
           {student.className || "No class"} · {formatDate(student.createdAt)} ·{" "}
           {student.mode === "screen" ? "done on screen" : "marked from paper"}
         </p>
-        <h1 className="mt-1 font-serif text-4xl text-[#243652]">{student.name}</h1>
+        <h1 className="mt-1 font-serif text-4xl text-[#f4efe6]">{student.name}</h1>
         <div className="mt-4 space-y-2 text-lg leading-relaxed">
           {report.summary.map((line) => (
             <p key={line}>{line}</p>
@@ -64,15 +64,15 @@ export function ReportView({
       </section>
 
       {report.overflow.length > 0 ? (
-        <p className="text-sm text-[#5c6570]">
+        <p className="text-sm text-[#c5d2e4]">
           Also breaking in speech, outside the top three:{" "}
           {report.overflow.map((priority) => priority.title).join(", ")}. Do not put all of them in the same week.
         </p>
       ) : null}
 
       <section>
-        <h2 className="font-serif text-2xl text-[#243652]">Paper profile</h2>
-        <p className="mt-1 text-sm text-[#5c6570]">
+        <h2 className="font-serif text-2xl text-[#f4efe6]">Paper profile</h2>
+        <p className="mt-1 text-sm text-[#c5d2e4]">
           Secure: at least 75% of answered items. Developing: 50–74%. Clear gap: below that. Blanks stay out of the rate.
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-4">
@@ -89,7 +89,7 @@ export function ReportView({
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-[#243652]">Word sets</h2>
+        <h2 className="font-serif text-2xl text-[#f4efe6]">Word sets</h2>
         <ul className="mt-4 grid gap-2 sm:grid-cols-2">
           {report.vocabSets.map((set) => (
             <li key={set.set} className="rounded-xl bg-white px-4 py-3 ring-1 ring-[#e3d8c8]">
@@ -115,8 +115,8 @@ export function ReportView({
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-[#243652]">Paper and speech together</h2>
-        <p className="mt-1 text-sm text-[#5c6570]">
+        <h2 className="font-serif text-2xl text-[#f4efe6]">Paper and speech together</h2>
+        <p className="mt-1 text-sm text-[#c5d2e4]">
           A priority comes from an error that shows on both sides. If you also heard a paper-only miss in the room, add it on the form.
         </p>
         <ul className="mt-4 divide-y divide-[#efe6d6] rounded-xl bg-white ring-1 ring-[#e3d8c8]">
@@ -131,7 +131,7 @@ export function ReportView({
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl text-[#243652]">Speaking</h2>
+        <h2 className="font-serif text-2xl text-[#f4efe6]">Speaking</h2>
         {report.speaking.scoredCount === 0 ? (
           <p className="mt-2 text-sm">No scores entered.</p>
         ) : (
@@ -163,16 +163,16 @@ export function ReportView({
             {student.evidence}
           </blockquote>
         ) : (
-          <p className="mt-4 text-sm text-[#5c6570]">
+          <p className="mt-4 text-sm text-[#c5d2e4]">
             No quote. Next time, write the child’s sentence exactly as said.
           </p>
         )}
-        {student.notes ? <p className="mt-3 text-sm text-[#3d4654]">Note: {student.notes}</p> : null}
+        {student.notes ? <p className="mt-3 text-sm text-[#d5deea]">Note: {student.notes}</p> : null}
       </section>
 
       <section>
         <div className="flex items-center justify-between gap-3">
-          <h2 className="font-serif text-2xl text-[#243652]">
+          <h2 className="font-serif text-2xl text-[#f4efe6]">
             {showAll ? "All items" : "Missed and blank items"}
           </h2>
           <Button type="button" variant="outline" className="h-9 px-3" onClick={() => setShowAll((value) => !value)}>

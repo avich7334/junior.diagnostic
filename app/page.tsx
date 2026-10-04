@@ -10,12 +10,12 @@ export default function HomePage() {
     <div className="space-y-12">
       <section className="max-w-3xl">
         <Badge variant="secondary">Ages 9–10 · CEFR A1 · not a mark</Badge>
-        <h1 className="mt-4 font-serif text-5xl leading-[1.05] text-[#243652] sm:text-6xl">
+        <h1 className="mt-4 font-serif text-5xl leading-[1.05] text-[#f4efe6] sm:text-6xl">
           Paper first.
           <br />
           Then a quiet room.
         </h1>
-        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[#3d4654]">
+        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[#d5deea]">
           Do they recognise the word, and can they use it when they speak? This check separates the two. It is not a certificate.
           You read the class gap and the child’s own gap from the same tool.
         </p>
@@ -87,7 +87,7 @@ export default function HomePage() {
 
       <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
-          <h2 className="font-serif text-3xl text-[#243652]">On the day</h2>
+          <h2 className="font-serif text-3xl text-[#f4efe6]">On the day</h2>
           <ol className="mt-4 space-y-3 text-sm leading-relaxed">
             <li>1. Print the booklet, or open Run on a tablet. Read the instructions once.</li>
             <li>2. 25 minutes. Do not translate the items. If they ask “What does this mean?”, say “You can leave it blank.”</li>
@@ -104,7 +104,7 @@ export default function HomePage() {
       </section>
 
       <section>
-        <h2 className="font-serif text-3xl text-[#243652]">What you are looking for</h2>
+        <h2 className="font-serif text-3xl text-[#f4efe6]">What you are looking for</h2>
         <div className="mt-4 overflow-x-auto rounded-xl bg-white ring-1 ring-[#e3d8c8]">
           <table className="w-full min-w-[36rem] text-left text-sm">
             <thead className="border-b border-[#efe6d6] text-[#5c6570]">
@@ -133,14 +133,14 @@ export default function HomePage() {
             </tbody>
           </table>
         </div>
-        <p className="mt-3 text-sm text-[#5c6570]">
+        <p className="mt-3 text-sm text-[#c5d2e4]">
           Secure: at least 75% of the answered items. Developing: 50–74%. Clear gap: below that. A blank item does not enter the percentage. They may simply have run out of time.
         </p>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-2">
         <div>
-          <h2 className="font-serif text-3xl text-[#243652]">Do not do this in the room</h2>
+          <h2 className="font-serif text-3xl text-[#f4efe6]">Do not do this in the room</h2>
           <ul className="mt-4 space-y-2 text-sm leading-relaxed">
             <li>Do not finish the sentence. Do not whisper the right pronoun.</li>
             <li>Do not ask for a full sentence. Nine is a relevant answer.</li>
@@ -150,8 +150,8 @@ export default function HomePage() {
           </ul>
         </div>
         <div>
-          <h2 className="font-serif text-3xl text-[#243652]">Picture key</h2>
-          <p className="mt-3 text-sm text-[#5c6570]">Do not read this to the learner. On the website the interview shows three pictures: the living room, the classroom, and the park.</p>
+          <h2 className="font-serif text-3xl text-[#f4efe6]">Picture key</h2>
+          <p className="mt-3 text-sm text-[#c5d2e4]">Do not read this to the learner. On the website the interview shows three pictures: the living room, the classroom, and the park.</p>
           <ul className="mt-3 space-y-2 text-sm">
             {sceneKey.map((line) => (
               <li key={line}>{line}</li>

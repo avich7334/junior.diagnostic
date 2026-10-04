@@ -21,7 +21,7 @@ export function PaperMarker({
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-[#5c6570]">
+        <p className="text-sm text-[#c5d2e4]">
           {marked}/{items.length} items marked. The right letter shows as a small dot. Mark the option the learner chose.
         </p>
         <div className="h-1.5 w-full overflow-hidden rounded-full bg-[#efe6d6] sm:w-48">

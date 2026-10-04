@@ -134,7 +134,7 @@ export function StudentRunner({
           <Button
             type="button"
             variant="outline"
-            className="h-11 px-4"
+            className="h-11 border-[#243652] bg-white px-4 text-[#17345c] hover:bg-[#efe6d6] hover:text-[#17345c]"
             disabled={step === 0}
             onClick={() => setStep((value) => value - 1)}
           >
@@ -142,11 +142,11 @@ export function StudentRunner({
           </Button>
           <p className="text-sm text-[#5c6570]">{blanks} blank</p>
           {step < 3 ? (
-            <Button type="button" className="h-11 px-4" onClick={() => setStep((value) => value + 1)}>
+            <Button type="button" className="h-11 bg-[#17345c] px-4 text-[#f4efe6] hover:bg-[#244272]" onClick={() => setStep((value) => value + 1)}>
               Next
             </Button>
           ) : (
-            <Button type="button" className="h-11 px-4" onClick={onDone}>
+            <Button type="button" className="h-11 bg-[#17345c] px-4 text-[#f4efe6] hover:bg-[#244272]" onClick={onDone}>
               Done
             </Button>
           )}

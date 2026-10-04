@@ -37,8 +37,8 @@ export function RubricPanel({
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_18rem]">
       <div className="space-y-5">
         <div>
-          <h2 className="font-serif text-3xl text-[#243652]">The child is back in class.</h2>
-          <p className="mt-2 text-[#3d4654]">
+          <h2 className="font-serif text-3xl text-[#f4efe6]">The child is back in class.</h2>
+          <p className="mt-2 text-[#d5deea]">
             Do not give the score in the room. Between 0 and 3, press the box closest to what you saw.
           </p>
         </div>

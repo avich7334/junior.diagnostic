@@ -29,10 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${nunito.variable} ${fraunces.variable} h-full`}>
-      <body className="min-h-full bg-[#f3eee4] font-sans text-[#1c2430] antialiased">
+      <body className="min-h-full bg-[#17345c] font-sans text-[#f4efe6] antialiased">
         <Header />
         <main className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">{children}</main>
-        <footer className="no-print mx-auto max-w-6xl px-4 pb-10 text-xs text-[#5c6570] sm:px-6">
+        <footer className="no-print mx-auto max-w-6xl px-4 pb-10 text-xs text-[#c5d2e4] sm:px-6">
           Results stay in this browser. They are not written to a server. This is not a Cambridge past paper. The items were written for this check.
         </footer>
       </body>

@@ -26,13 +26,13 @@ export default function ReportPage() {
   }, [example, params.id])
 
   if (student === undefined) {
-    return <p className="text-sm text-[#5c6570]">Opening the report…</p>
+    return <p className="text-sm text-[#c5d2e4]">Opening the report…</p>
   }
   if (!student) {
     return (
       <div className="max-w-lg">
-        <h1 className="font-serif text-4xl text-[#243652]">This record is not here</h1>
-        <p className="mt-3 text-sm text-[#5c6570]">
+        <h1 className="font-serif text-4xl text-[#f4efe6]">This record is not here</h1>
+        <p className="mt-3 text-sm text-[#c5d2e4]">
           Checks stay in this browser. They do not show on another device or in a private window.
         </p>
         <Link href="/sinif" className={cn(buttonVariants(), "mt-5 inline-flex h-11 px-4")}>

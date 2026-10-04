@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "Run" }
 
 export default function RunPage() {
   return (
-    <Suspense fallback={<p className="text-sm text-[#5c6570]">Loading…</p>}>
+    <Suspense fallback={<p className="text-sm text-[#c5d2e4]">Loading…</p>}>
       <Wizard />
     </Suspense>
   )

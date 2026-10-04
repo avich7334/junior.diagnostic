@@ -11,22 +11,22 @@ export default function OralPage() {
     <div className="space-y-6">
       <div className="no-print flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="font-serif text-4xl text-[#243652]">Oral exam</h1>
-          <p className="mt-2 max-w-xl text-sm text-[#5c6570]">
+          <h1 className="font-serif text-4xl text-[#f4efe6]">Oral exam</h1>
+          <p className="mt-2 max-w-xl text-sm text-[#c5d2e4]">
             {oralQuestionCount} questions. The page the child sees has only the picture. Expected answers are on the teacher page.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
           <a
             href="/pdf/junior-a1-teacher.pdf"
-            className="inline-flex h-10 items-center rounded-full border border-[#243652] px-4 text-sm font-medium text-[#243652]"
+            className="inline-flex h-10 items-center rounded-full border border-[#f4efe6] px-4 text-sm font-medium text-[#f4efe6]"
           >
             Teacher copy PDF
           </a>
           <PrintButton label="Print the oral pack" />
         </div>
       </div>
-      <p className="no-print text-sm text-[#5c6570]">
+      <p className="no-print text-sm text-[#c5d2e4]">
         The pictures sit inside the teacher copy, with the rubric and the key.{" "}
         <Link href="/pdf/junior-a1-teacher.pdf" className="underline">
           Teacher copy PDF

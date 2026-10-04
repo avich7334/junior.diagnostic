@@ -36,10 +36,10 @@ export function InterviewPanel({
   return (
     <div className="space-y-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="rounded-full bg-[#243652] px-3 py-1 text-sm text-[#f7f3ea]">
+        <p className="rounded-full bg-[#f4efe6] px-3 py-1 text-sm text-[#17345c]">
           Do not correct. Do not ask for a repeat. Take notes.
         </p>
-        <p className={cn("font-mono text-sm", seconds > 12 * 60 ? "text-[#a33b2b]" : "text-[#5c6570]")}>
+        <p className={cn("font-mono text-sm", seconds > 12 * 60 ? "text-[#f0b4a8]" : "text-[#c5d2e4]")}>
           {clock}
           {seconds > 12 * 60 ? " · time is up, finish the sentence" : ""}
         </p>

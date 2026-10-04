@@ -11,8 +11,8 @@ export default function FormPage() {
     <div className="space-y-6">
       <div className="no-print flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="font-serif text-4xl text-[#243652]">Interview form</h1>
-          <p className="mt-2 max-w-xl text-sm text-[#5c6570]">
+          <h1 className="font-serif text-4xl text-[#f4efe6]">Interview form</h1>
+          <p className="mt-2 max-w-xl text-sm text-[#c5d2e4]">
             Keep the questions. The website interview asks the learner to describe three pictures. Turn those picture pages toward the learner. They have no answers.
           </p>
         </div>

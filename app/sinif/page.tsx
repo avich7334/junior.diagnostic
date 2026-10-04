@@ -23,7 +23,7 @@ export default function ClassPage() {
   }
 
   if (!students) {
-    return <p className="text-sm text-[#5c6570]">Loading the class…</p>
+    return <p className="text-sm text-[#c5d2e4]">Loading the class…</p>
   }
 
   const portrait = classPortrait(students)
@@ -32,8 +32,8 @@ export default function ClassPage() {
     <div className="space-y-8">
       <header className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h1 className="font-serif text-4xl text-[#243652]">Class</h1>
-          <p className="mt-2 max-w-xl text-sm text-[#5c6570]">
+          <h1 className="font-serif text-4xl text-[#f4efe6]">Class</h1>
+          <p className="mt-2 max-w-xl text-sm text-[#c5d2e4]">
             Records stay in this browser. Download a backup before you switch computers.
           </p>
         </div>
@@ -109,7 +109,7 @@ export default function ClassPage() {
             ))}
           </ul>
 
-          {message ? <p className="text-sm text-[#8a5a12]">{message}</p> : null}
+          {message ? <p className="text-sm text-[#f3d7a1]">{message}</p> : null}
 
           <div className="flex flex-wrap gap-2">
             <Button
@@ -178,7 +178,7 @@ export default function ClassPage() {
               Delete all
             </Button>
           </div>
-          <p className="text-xs text-[#5c6570]">A row opens the report. Use the button at the bottom of the report to delete one.</p>
+          <p className="text-xs text-[#c5d2e4]">A row opens the report. Use the button at the bottom of the report to delete one.</p>
         </>
       )}
     </div>

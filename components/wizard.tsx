@@ -115,7 +115,7 @@ export function Wizard() {
   }
 
   if (!ready) {
-    return <p className="text-sm text-[#5c6570]">Loading…</p>
+    return <p className="text-sm text-[#c5d2e4]">Loading…</p>
   }
 
   if (step === "screen" && student) {
@@ -170,8 +170,8 @@ export function Wizard() {
           }}
         >
           <div>
-            <h1 className="font-serif text-4xl text-[#243652]">Start a check</h1>
-            <p className="mt-2 text-[#3d4654]">
+            <h1 className="font-serif text-4xl text-[#f4efe6]">Start a check</h1>
+            <p className="mt-2 text-[#d5deea]">
               Name first. Then mark the paper yourself, or let the learner do it on this screen. The interview comes after either one.
             </p>
           </div>
@@ -225,7 +225,7 @@ export function Wizard() {
 
       {step === "handoff" && student ? (
         <div className="mx-auto max-w-lg py-16 text-center">
-          <p className="font-serif text-5xl text-[#243652]">Thank you.</p>
+          <p className="font-serif text-5xl text-[#f4efe6]">Thank you.</p>
           <p className="mt-4 text-xl">Give the tablet to your teacher.</p>
           <Button type="button" className="mt-10 h-11 px-5" onClick={() => setStep("paper")}>
             Teacher continues
@@ -237,8 +237,8 @@ export function Wizard() {
         <div className="space-y-4">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
-              <h1 className="font-serif text-3xl text-[#243652]">{student.name}</h1>
-              <p className="text-sm text-[#5c6570]">Paper marking. Choose the option the learner marked. Right or wrong fills in on its own.</p>
+              <h1 className="font-serif text-3xl text-[#f4efe6]">{student.name}</h1>
+              <p className="text-sm text-[#c5d2e4]">Paper marking. Choose the option the learner marked. Right or wrong fills in on its own.</p>
             </div>
             <Button type="button" className="h-11 px-4" onClick={() => setStep("interview")}>
               Go to the interview
