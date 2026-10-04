@@ -144,7 +144,7 @@
 @media print {
   @page {
     size: A4;
-    margin: 12mm;
+    margin: 10mm;
   }
   * {
     print-color-adjust: economy;
@@ -212,6 +212,17 @@
   }
   .sheet:last-child {
     break-after: auto;
+  }
+  .report {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+  .report-misses {
+    columns: 2;
+    column-gap: 14px;
+  }
+  .report-hit {
+    display: none !important;
   }
 }
 
