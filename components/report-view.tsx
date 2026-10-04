@@ -175,7 +175,7 @@ export function ReportView({
           <h2 className="font-serif text-2xl text-[#f4efe6]">
             {showAll ? "All items" : "Missed and blank items"}
           </h2>
-          <Button type="button" variant="outline" className="h-9 px-3" onClick={() => setShowAll((value) => !value)}>
+          <Button type="button" variant="outline" className="no-print h-9 px-3" onClick={() => setShowAll((value) => !value)}>
             {showAll ? "Misses only" : "Show all"}
           </Button>
         </div>

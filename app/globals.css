@@ -144,26 +144,71 @@
 @media print {
   @page {
     size: A4;
-    margin: 8mm;
+    margin: 12mm;
   }
   * {
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
+    print-color-adjust: economy;
+    -webkit-print-color-adjust: economy;
+    box-shadow: none !important;
+    text-shadow: none !important;
   }
   .no-print {
     display: none !important;
   }
+  html,
   body {
-    background: white !important;
+    background: #fff !important;
     color: #1c2430 !important;
   }
   main {
     max-width: none !important;
     padding: 0 !important;
   }
+  .text-\[\#f4efe6\],
+  .text-\[\#d5deea\],
+  .text-\[\#c5d2e4\],
+  .text-\[\#f7f3ea\],
+  .text-\[\#f7f3ea\]\/70,
+  .text-\[\#f7f3ea\]\/80,
+  .text-\[\#f7f3ea\]\/90,
+  .text-\[\#f0b4a8\] {
+    color: #1c2430 !important;
+  }
+  .bg-\[\#17345c\],
+  .bg-\[\#17345c\]\/95,
+  .bg-\[\#243652\]:not(.h-2),
+  .bg-\[\#244272\] {
+    background: #fff !important;
+    color: #1c2430 !important;
+  }
+  .h-2.bg-\[\#243652\] {
+    background: #1c2430 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  article .rounded-xl.bg-white,
+  article .rounded-2xl.bg-white,
+  [data-slot="card"] {
+    background: #fff !important;
+    color: #1c2430 !important;
+    border: 1px solid #cfc6b8 !important;
+    break-inside: avoid;
+  }
+  .bg-\[\#f8e6e1\],
+  .bg-\[\#f8efd8\],
+  .bg-\[\#e5f2ec\],
+  .bg-\[\#efe6d6\],
+  .bg-\[\#eeeae2\],
+  .bg-\[\#faf7f1\],
+  svg,
+  img {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
   .sheet {
     break-after: page;
-    box-shadow: none !important;
+    background: #fff !important;
+    color: #1c2430 !important;
   }
   .sheet:last-child {
     break-after: auto;
