@@ -209,8 +209,8 @@ export function Wizard() {
                 onClick={() => setMode(value)}
                 className={
                   mode === value
-                    ? "rounded-xl border border-[#243652] bg-[#243652] px-4 py-4 text-left text-[#f7f3ea]"
-                    : "rounded-xl border border-[#e3d8c8] bg-white px-4 py-4 text-left"
+                    ? "rounded-xl border-2 border-[#f4efe6] bg-[#f4efe6] px-4 py-4 text-left font-medium text-[#17345c]"
+                    : "rounded-xl border border-[#c9d4e4] bg-transparent px-4 py-4 text-left text-[#f4efe6] hover:bg-[#244272]"
                 }
               >
                 {label}

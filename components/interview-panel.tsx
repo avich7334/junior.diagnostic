@@ -52,7 +52,9 @@ export function InterviewPanel({
             onClick={() => onPhase(index)}
             className={cn(
               "shrink-0 rounded-full px-3 py-1.5 text-sm",
-              index === phaseIndex ? "bg-[#243652] text-[#f7f3ea]" : "bg-[#efe6d6] text-[#243652]"
+              index === phaseIndex
+                ? "bg-[#f4efe6] font-medium text-[#17345c]"
+                : "border border-[#c9d4e4] bg-transparent text-[#f4efe6] hover:bg-[#244272]"
             )}
           >
             {entry.title}

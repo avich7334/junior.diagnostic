@@ -58,7 +58,7 @@ export default function ClassPage() {
         </div>
       ) : (
         <>
-          <section className="rounded-2xl bg-[#243652] p-5 text-[#f7f3ea]">
+          <section className="rounded-2xl border border-[#c9d4e4] bg-[#244272] p-5 text-[#f4efe6]">
             <h2 className="font-serif text-2xl">Shared gap</h2>
             {students.length < 3 ? (
               <p className="mt-2 text-sm text-[#f7f3ea]/80">

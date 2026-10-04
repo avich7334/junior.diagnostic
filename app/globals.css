@@ -230,13 +230,89 @@
   color: #5c6570;
 }
 
-:is([data-slot="card"], .bg-white, .sheet) :is(a, button).text-\[\#f4efe6\] {
-  color: #17345c;
-  border-color: #3e5d8a;
-  background: transparent;
+/* Cream actions sit on the navy page. On a light surface they switch to navy fill, cream label. */
+:is(
+  [data-slot="card"],
+  .sheet,
+  .bg-white,
+  .bg-\[\#fffdf8\],
+  .bg-\[\#faf7f1\],
+  .bg-\[\#f7f3ea\],
+  .bg-\[\#f8efd8\],
+  .bg-\[\#f8e6e1\],
+  .bg-\[\#e5f2ec\],
+  .bg-\[\#efe6d6\]
+) :is(a, button).bg-\[\#f4efe6\] {
+  background-color: #17345c;
+  color: #f4efe6;
 }
 
-:is([data-slot="card"], .bg-white, .sheet) :is(a, button).text-\[\#f4efe6\]:hover {
-  background: #efe6d6;
+:is(
+  [data-slot="card"],
+  .sheet,
+  .bg-white,
+  .bg-\[\#fffdf8\],
+  .bg-\[\#faf7f1\],
+  .bg-\[\#f7f3ea\],
+  .bg-\[\#f8efd8\],
+  .bg-\[\#f8e6e1\],
+  .bg-\[\#e5f2ec\],
+  .bg-\[\#efe6d6\]
+) :is(a, button).bg-\[\#f4efe6\]:hover {
+  background-color: #244272;
+  color: #f4efe6;
+}
+
+:is(
+  [data-slot="card"],
+  .sheet,
+  .bg-white,
+  .bg-\[\#fffdf8\],
+  .bg-\[\#faf7f1\],
+  .bg-\[\#f7f3ea\],
+  .bg-\[\#f8efd8\],
+  .bg-\[\#f8e6e1\],
+  .bg-\[\#e5f2ec\],
+  .bg-\[\#efe6d6\]
+) :is(a, button).text-\[\#f4efe6\]:not(.bg-\[\#17345c\]):not(.bg-\[\#244272\]):not(.bg-\[\#a33b2b\]):not(.bg-white) {
   color: #17345c;
+  border-color: #17345c;
+  background-color: transparent;
+}
+
+:is(
+  [data-slot="card"],
+  .sheet,
+  .bg-white,
+  .bg-\[\#fffdf8\],
+  .bg-\[\#faf7f1\],
+  .bg-\[\#f7f3ea\],
+  .bg-\[\#f8efd8\],
+  .bg-\[\#f8e6e1\],
+  .bg-\[\#e5f2ec\],
+  .bg-\[\#efe6d6\]
+) :is(a, button).text-\[\#f4efe6\]:not(.bg-\[\#17345c\]):not(.bg-\[\#244272\]):not(.bg-\[\#a33b2b\]):not(.bg-white):hover {
+  background-color: #efe6d6;
+  color: #17345c;
+}
+
+:is(
+  [data-slot="card"],
+  .sheet,
+  .bg-white,
+  .bg-\[\#fffdf8\],
+  .bg-\[\#faf7f1\],
+  .bg-\[\#f7f3ea\],
+  .bg-\[\#f8efd8\],
+  .bg-\[\#f8e6e1\],
+  .bg-\[\#e5f2ec\],
+  .bg-\[\#efe6d6\]
+) :is(button, a, input, textarea):disabled {
+  color: #5c6570;
+  border-color: #c9c2b6;
+}
+
+input.bg-white::placeholder,
+textarea.bg-white::placeholder {
+  color: #5c6570;
 }
