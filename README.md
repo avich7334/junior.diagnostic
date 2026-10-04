@@ -5,7 +5,7 @@ A vocabulary-and-speaking diagnostic for A1 EFL juniors, ages 9–10. It does no
 It has two parts:
 
 1. **Written booklet** (25–30 minutes, whole class): picture–word matching, a short reading, a word in a sentence, and very short grammar.
-2. **Interview** (6–8 minutes, one learner): the questions the teacher asks, and an error rubric. The oral pack has a warm-up, spare questions that work on any picture, and six picture-description scenes. One child sees one picture.
+2. **Interview** (one learner): the questions the teacher asks, and an error rubric. On the website the learner describes three pictures: the living room, the classroom, and the park. The printed oral pack still gives one child one picture, chosen from six scenes.
 
 A structure is a priority only when it breaks on the paper and in speech. An error on one side alone is not yet a confirmed gap.
 

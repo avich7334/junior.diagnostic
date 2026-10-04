@@ -55,7 +55,7 @@ export function TeacherPack() {
           <li>2. Twenty-five minutes. If they ask “What does this mean?”, say “You can leave it blank.”</li>
           <li>3. Collect the papers. Do not say a mark. On the key, write the letter they marked. Right or wrong on its own does not name the error.</li>
           <li>4. One learner at a time, 6–8 minutes. Hello. Sit down, please. Do not score the greeting.</li>
-          <li>5. Ask 4–6 warm-up questions. Then one picture, A to F. Put only that picture’s show page in front of the child. Ask 8–10 of its questions. Add at most two from the any-picture bank. Rotate A to F so children who sit together do not describe the same picture.</li>
+          <li>5. On the website, the interview shows three pictures in a row: the living room, the classroom, and the park. Ask the questions on the screen for each one. On paper, ask 4–6 warm-up questions, then one picture, A to F. Put only that picture’s show page in front of the child. Ask 8–10 of its questions. Add at most two from the any-picture bank. Rotate A to F so children who sit together do not describe the same picture.</li>
           <li>6. End with “Now you ask me a question.” Thank them. They go back to class.</li>
           <li>7. After they leave, mark the rubric. Do not give the score in the room.</li>
         </ol>

@@ -151,7 +151,7 @@ export default function HomePage() {
         </div>
         <div>
           <h2 className="font-serif text-3xl text-[#243652]">Picture key</h2>
-          <p className="mt-3 text-sm text-[#5c6570]">Do not read this to the learner. Turn the picture over in the fourth phase.</p>
+          <p className="mt-3 text-sm text-[#5c6570]">Do not read this to the learner. On the website the interview shows three pictures: the living room, the classroom, and the park.</p>
           <ul className="mt-3 space-y-2 text-sm">
             {sceneKey.map((line) => (
               <li key={line}>{line}</li>

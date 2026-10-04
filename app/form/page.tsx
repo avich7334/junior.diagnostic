@@ -1,5 +1,5 @@
 import { PrintButton } from "@/components/print-button"
-import { RoomScene } from "@/components/pictures"
+import { ExamScene } from "@/components/exam-scenes"
 import { dimensions, errorCodes, phases } from "@/lib/content"
 import type { Metadata } from "next"
 
@@ -13,14 +13,14 @@ export default function FormPage() {
         <div>
           <h1 className="font-serif text-4xl text-[#243652]">Interview form</h1>
           <p className="mt-2 max-w-xl text-sm text-[#5c6570]">
-            Three pages. Keep the questions. Turn the last page toward the learner. That page has no answers.
+            Keep the questions. The website interview asks the learner to describe three pictures. Turn those picture pages toward the learner. They have no answers.
           </p>
         </div>
         <PrintButton label="Print the form" />
       </div>
 
       <article className="sheet mx-auto max-w-[210mm] bg-white px-8 py-8 shadow-[0_16px_50px_rgba(36,54,82,0.08)]">
-        <p className="text-xs tracking-[0.16em] text-[#a33b2b] uppercase">Part 2 · 6–8 minutes</p>
+        <p className="text-xs tracking-[0.16em] text-[#a33b2b] uppercase">Part 2 · three pictures</p>
         <h2 className="font-serif text-3xl text-[#243652]">Speaking check</h2>
         <div className="mt-4 grid grid-cols-3 gap-4 text-sm">
           {["Learner", "Class", "Date"].map((field) => (
@@ -94,12 +94,14 @@ export default function FormPage() {
         <div className="mt-4 h-10 border-b border-[#e3d8c8]" />
       </article>
 
-      <article className="sheet mx-auto max-w-[210mm] bg-white px-8 py-8 shadow-[0_16px_50px_rgba(36,54,82,0.08)]">
-        <p className="text-center font-serif text-3xl text-[#243652]">Look at the picture.</p>
-        <div className="mt-4 overflow-hidden rounded-xl border border-[#e3d8c8]">
-          <RoomScene className="h-auto w-full" />
-        </div>
-      </article>
+      {(["room", "classroom", "park"] as const).map((id, index) => (
+        <article key={id} className="sheet mx-auto max-w-[210mm] bg-white px-8 py-8 shadow-[0_16px_50px_rgba(36,54,82,0.08)]">
+          <p className="text-center font-serif text-3xl text-[#243652]">Look at the picture. {index + 1} of 3</p>
+          <div className="mt-4 overflow-hidden rounded-xl border border-[#e3d8c8]">
+            <ExamScene id={id} className="h-auto w-full" />
+          </div>
+        </article>
+      ))}
     </div>
   )
 }

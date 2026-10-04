@@ -1027,6 +1027,7 @@ export type Phase = {
   scored: boolean
   intro?: string
   showScene?: boolean
+  scene?: "room" | "classroom" | "park"
   close?: string
   questions: {
     say: string
@@ -1129,12 +1130,13 @@ export const phases: Phase[] = [
     errorIds: ["gr-dont", "gr-3sg", "voc-single", "voc-wrong", "int-l1"],
   },
   {
-    id: "picture",
-    title: "Picture",
+    id: "picture-room",
+    title: "Picture 1",
     minutes: "2 minutes",
     scored: true,
     showScene: true,
-    intro: "Turn the picture over now. Let them look for a few seconds. A point is acceptable. Then say Tell me.",
+    scene: "room",
+    intro: "Picture 1 of 3, the living room. Let them look for a few seconds. A point is acceptable. Then say Tell me.",
     questions: [
       {
         say: "Look at the picture. What can you see?",
@@ -1165,6 +1167,95 @@ export const phases: Phase[] = [
       "gr-there",
       "gr-prep",
       "gr-can",
+      "gr-heshe",
+      "voc-wrong",
+      "voc-silent",
+      "pr-final",
+      "pr-wv",
+      "pr-th",
+    ],
+  },
+  {
+    id: "picture-classroom",
+    title: "Picture 2",
+    minutes: "2 minutes",
+    scored: true,
+    showScene: true,
+    scene: "classroom",
+    intro: "Picture 2 of 3, the classroom. Same rules. Do not correct. Let them look, then ask.",
+    questions: [
+      {
+        say: "Look at the picture. What can you see?",
+        backup: "Is there a teacher? Is there a boy?",
+        listen: "Two objects is enough. classroom or school if it comes.",
+        expected: "A teacher, a boy, a bag and books.",
+      },
+      {
+        say: "Where is the bag?",
+        backup: "Is the bag on the desk?",
+        listen: "on the desk. The bag is red.",
+        expected: "On the desk.",
+      },
+      {
+        say: "Where is the pencil?",
+        backup: "Is the pencil under the desk?",
+        listen: "under the desk. on the desk is the bag, not the pencil.",
+        expected: "Under the desk.",
+      },
+      {
+        say: "What is the boy doing?",
+        backup: "Is he writing?",
+        listen: "write or writing. she for the boy is the pronoun.",
+        expected: "He is writing.",
+      },
+    ],
+    errorIds: [
+      "gr-there",
+      "gr-prep",
+      "gr-heshe",
+      "voc-wrong",
+      "voc-silent",
+      "pr-final",
+      "pr-wv",
+      "pr-th",
+    ],
+  },
+  {
+    id: "picture-park",
+    title: "Picture 3",
+    minutes: "2 minutes",
+    scored: true,
+    showScene: true,
+    scene: "park",
+    intro: "Picture 3 of 3, the park. Same rules. Do not correct. Let them look, then ask.",
+    questions: [
+      {
+        say: "Look at the picture. What can you see?",
+        backup: "Is there a dog? Is there a ball?",
+        listen: "How many objects they name. park or outside if it comes.",
+        expected: "A boy, a girl, a dog and a ball.",
+      },
+      {
+        say: "Where is the bird?",
+        backup: "Is the bird in the tree?",
+        listen: "in the tree. on the ground is wrong.",
+        expected: "In the tree.",
+      },
+      {
+        say: "Where is the hat?",
+        backup: "Is the hat on the bench?",
+        listen: "on the bench. hat or cap.",
+        expected: "On the bench.",
+      },
+      {
+        say: "What is the boy doing?",
+        backup: "Is he running?",
+        listen: "run or running. The ball is on the grass, not in his hand.",
+        expected: "He is running.",
+      },
+    ],
+    errorIds: [
+      "gr-prep",
       "gr-heshe",
       "voc-wrong",
       "voc-silent",

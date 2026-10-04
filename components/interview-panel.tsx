@@ -1,9 +1,10 @@
 "use client"
 
-import { RoomScene } from "@/components/pictures"
+import { ExamScene } from "@/components/exam-scenes"
 import { Button } from "@/components/ui/button"
 import { Textarea } from "@/components/ui/textarea"
-import { errorCodes, phases, sceneKey } from "@/lib/content"
+import { errorCodes, phases } from "@/lib/content"
+import { scenes } from "@/lib/oral"
 import { cn } from "@/lib/utils"
 import { useEffect, useState } from "react"
 
@@ -38,9 +39,9 @@ export function InterviewPanel({
         <p className="rounded-full bg-[#243652] px-3 py-1 text-sm text-[#f7f3ea]">
           Do not correct. Do not ask for a repeat. Take notes.
         </p>
-        <p className={cn("font-mono text-sm", seconds > 8 * 60 ? "text-[#a33b2b]" : "text-[#5c6570]")}>
+        <p className={cn("font-mono text-sm", seconds > 12 * 60 ? "text-[#a33b2b]" : "text-[#5c6570]")}>
           {clock}
-          {seconds > 8 * 60 ? " · time is up, finish the sentence" : ""}
+          {seconds > 12 * 60 ? " · time is up, finish the sentence" : ""}
         </p>
       </div>
       <div className="flex gap-2 overflow-x-auto">
@@ -65,14 +66,12 @@ export function InterviewPanel({
           {phase.scored ? "" : " · not scored"}
         </p>
         {phase.intro ? <p className="mt-2 text-[#3d4654]">{phase.intro}</p> : null}
-        {phase.showScene ? (
+        {phase.scene ? (
           <div className="mt-4 overflow-hidden rounded-xl border border-[#e3d8c8]">
-            <RoomScene className="h-auto w-full" />
-            <ul className="space-y-1 bg-[#faf7f1] px-4 py-3 text-sm text-[#5c6570]">
-              {sceneKey.map((line) => (
-                <li key={line}>{line}</li>
-              ))}
-            </ul>
+            <ExamScene id={phase.scene} className="h-auto w-full" />
+            <p className="bg-[#faf7f1] px-4 py-3 text-sm text-[#5c6570]">
+              Do not read this aloud. {scenes.find((scene) => scene.id === phase.scene)?.note}
+            </p>
           </div>
         ) : null}
         <ol className="mt-5 space-y-5">
